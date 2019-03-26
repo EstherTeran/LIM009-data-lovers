@@ -1,30 +1,44 @@
 /* Manejo del DOM */
-
-const data = POKEMON.pokemon;
+// const fulltype =data.pokemon.map(pokemon=>`${pokemon.name}`);
+// console.log(fulltype)
+// const todo = POKEMON.pokemon.map(pokemon => `Numero: ${pokemon.num} 
+// Nombre: ${pokemon.name}  
+// Tipo: ${pokemon.type} 
+// Altura: ${pokemon.height}  
+// Peso: ${pokemon.weight} 
+//  Caramelos: ${pokemon.candy}  
+//  Huevos: ${pokemon.egg}  
+//  Debilidades: ${pokemon.weaknesses} `);
+// for (i = 0; i < todo.length; i++) {
+//     console.log(todo[i])
+// }
+//const mostrar = POKEMON.pokemon;
+// for  ( i=0; i<mostrar.length; i++)
+// console.log(mostrar[i].img);
+/*console.log(POKEMON.pokemon[1]);*/
+// function mostrarPokemones(pokemon){
+// for(let i=0;i<pokemon.length;i++){
+// console.log(pokemon[i])
+// }
+// };
+// mostrarPokemones(POKEMON.pokemon)
+// console.log(POKEMON.pokemon[0].name);
+// como saber si elemento existe dentro de un array
+const pokemon = POKEMON.pokemon;
 const root = document.getElementById('root');
-for(let i=0;i<data.length;i++){
+for(let i=0;i<pokemon.length;i++){
   root.innerHTML += `
-   <div class="alert alert-primary">
-   <div> <img src="${data[i].img} " alt="${data[i].name} "></img>
-   <div class="card mb-3" style="max-width: 540px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
+   <div>
+   <div class="container-yellow"> <img src="${pokemon[i].img} " alt="${pokemon[i].name} "></img>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">${data[i].name}</h5>
-        <p class="card-text">Numero:${data[i].num} </br>
-      Tipo: ${data[i].type} </br> 
-    Altura: ${data[i].height} </br>  
-      Peso: ${data[i].weight} </br> 
-      Caramelos: ${data[i].candy} </br>  
-       Huevos: ${data[i].egg} </br>  
-      Debilidades: ${data[i].weaknesses} </p>
-        
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    </div>
-  `}
+    <div class="container-yellow">
+     Numero:${pokemon[i].num} </br>
+     Nombre:${pokemon[i].name} </br>
+   Tipo: ${pokemon[i].type} </br> 
+ Altura: ${pokemon[i].height} </br>  
+   Peso: ${pokemon[i].weight} </br> 
+   Caramelos: ${pokemon[i].candy} </br>  
+    Huevos: ${pokemon[i].egg} </br>  
+   Debilidades: ${pokemon[i].weaknesses}
+ </div> </div>
+ `}

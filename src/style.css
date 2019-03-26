@@ -1,9 +1,30 @@
+h1{
+color: yellow;    
+text-align: center;
+}
 .center{
     margin-left: auto;
-    margin-right: auto;
+    border-left: 0 auto;
+    border-color: black;
 }
-.container{
+.flex-container{
     display: flex;
-    flex-wrap: wrap;
-
+    flex-wrap:wrap;
+    width: 90%;
 }
+.container-yellow {
+    background-color:#42b69a;
+    /* width: 100%; */
+    margin: 10px;
+    text-align: left;
+    line-height: 85%;
+    font-size: 100%;
+    /* color:black; */
+    border: 2px inset yellow;
+  }
+  body{
+      background-image: url("https://i.pinimg.com/736x/cf/59/d1/cf59d112023132c6d75605e47f12f6c9.jpg?b=t");
+      background-repeat: no-repeat;
+      background-size: cover
+  }
+  
