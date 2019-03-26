@@ -10,11 +10,14 @@ text-align: center;
 .flex-container{
     display: flex;
     flex-wrap:wrap;
-    width: 90%;
+    width: 70%;
+}
+#filtrado{
+width:10%;
 }
 .container-yellow {
     background-color:#42b69a;
-    /* width: 100%; */
+    width: 100%;
     margin: 10px;
     text-align: left;
     line-height: 85%;
@@ -26,5 +29,5 @@ text-align: center;
       background-image: url("https://i.pinimg.com/736x/cf/59/d1/cf59d112023132c6d75605e47f12f6c9.jpg?b=t");
       background-repeat: no-repeat;
       background-size: cover
-  }
+    }
   
