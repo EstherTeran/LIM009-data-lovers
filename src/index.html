@@ -8,24 +8,30 @@
 </head>
 
 <body>
+  <div class = "container">
   <header>
+    <div class = "principal">
     <h1> POKÉMON WORLD &#4044;</h1>
+  </div>
   </header>
-  <input type="text" placeholder="Busca Tu Pokémon 🔍"> <button>Buscar</button>
-  <div id="filtrado" class="container-yellow"> <h2>TIPO</h2>
+  <div class = "miniprincipal">
+  <input type="text" placeholder="Busca Tu Pokémon"> <button>🔍</button>
+</div>
+  <div class = "menu"> <h2>TIPO</h2>
   <input type="radio"/>Aire. <br>
   <input type="radio" />Agua. <br>
   <input type="radio" />Fuego. <br>
   <h3>ORDENAR</h3>
-  <input type="radio" />A-Z. <br>
-  <input type="radio" />Z-A <br>
+  <input  id = "btnAZ" type="radio" />A-Z. <br>
+  <input id = "btnZA" type="radio" />Z-A <br>
   <button>TODOS</button></div>
-  <div id="root" class="flex-container center"></div>
+  <div class = "content" id="root"></div>
   <div>
   </div>
   <script src="./data/pokemon/pokemon.js"></script>
   <script src="data.js"></script>
   <script src="main.js"></script>
+</div>
 </body>
 
 </html>

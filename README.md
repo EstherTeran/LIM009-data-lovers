@@ -10,16 +10,6 @@ Pokémon GO es un videojuego de realidad aumentada basado en la localización de
 En Pokemon World podran encontrar las caracteristicas e informacion necesaria para poder conocer mejor a los pokemones y tener mejor rendimiento al jugar Pokemon Go. Asimismo, se ofrece un filtrado por tipos y ordenamiento de la A - Z para optimizar la busqueda del ususario.
 
 
-## Índice
-
-* [Resumen](#resumen)
-* [Prototipo de baja fidelidad](#prototipo-baja-fidelidad)
-* [Prototipo de alta fidelidad](#prototipo-alta-fidelidad)
-* [Historias de Usuarios](#historia-de-usuarios)
-
-
-***
-
 ## Prototipo de baja fidelidad
 
 ![baja-fidelidad](https://imgbbb.com/images/2019/03/26/75528479-69cb-47bd-b416-672e98190966.md.jpg),
@@ -33,21 +23,29 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 
 ## Prototipo de alta fidelidad
 
+![alta-fidelidad](https://imgbbb.com/images/2019/04/01/Captura.md.png).
 
 ## Historias de usuario
 
 <ul>
-<li>Historia de usuario 1</li>
+<li>HISTORIA DE USUARIO 1</li>
 <ul>
-<li>Yo como usuario quiero poder ver los datos de los Pokemones para poder conocerlos mejor.</li>
+<li>Yo como usuario quiero ver un listado de todos los pokemones que se encuentran en la data y con los siguientes datos : Nombre, tipo, altura, peso, huevos e imagen</li>
+<ul>
+<li>CRITERIOS DE ACEPTACIÓN:
+-El usuario puede ver todos los pokemones y su información en la web
+-El usuario puede ver la página web en su celular 
+</li>
 </ul>
 
-<li>Historia de usuario 2</li>
+<li>HISTORIA DE USUARIO 2</li>
 <ul>
-<li>Yo como usuario quiero filtrar a los pokemones por tipos para encontrarlos mas rapido.</li>
-</ul>
-
-<li>Historia de usuario 3</li>
+<li>Yo como usuario quiero poder ordena los pokemones de A - Z: 
+</li>
 <ul>
-<li>Yo como usuario quiero ordenar a los pokemones de la A a la Z para encontrarlos mas rapido.</li>
+<li>CRITERIOS DE ACEPTACIÓN:
+-El usuario puede ver todos los pokemones y su información en la web
+-El usuario puede ver la página web en su celular 
+-El usuario puede ordenar por Nombre de la A-Z los pokemones.
+</li>
 </ul>
