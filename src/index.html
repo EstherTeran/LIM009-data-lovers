@@ -2,30 +2,31 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Data Lovers</title>
-  <link rel="stylesheet" href="style.css" />
+ <meta charset="utf-8">
+ <title>Data Lovers</title>
+ <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <h1> POKÉMON WORLD &#4044;</h1>
-  </header>
-  <input type="text" placeholder="Busca Tu Pokémon 🔍"> <button>Buscar</button>
-  <div id="filtrado" class="container-yellow"> <h2>TIPO</h2>
-  <input type="radio"/>Aire. <br>
-  <input type="radio" />Agua. <br>
-  <input type="radio" />Fuego. <br>
-  <h3>ORDENAR</h3>
-  <input type="radio" />A-Z. <br>
-  <input type="radio" />Z-A <br>
-  <button>TODOS</button></div>
-  <div id="root" class="flex-container center"></div>
-  <div>
-  </div>
-  <script src="./data/pokemon/pokemon.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
+ <div clas="container-general backgraund-green">
+ <header>
+ <div class="title border"><h1> POKÉMON WORLD &#4044;</h1></div>
+</header>
+<div class="buscar border"> <input type="text" placeholder="Busca Tu Pokémon 🔍">
+   <button>Buscar</button></div>
+   <div class="root border" id="root"></div>
+ <div class="filter-data border"><h2>TIPO</h2></div>
+ <div class="filter-data border"><input type="radio" />Aire.</div>
+ <div class="filter-data border"><input type="radio" />Agua. </div>
+ <div class="filter-data border"><input type="radio" />Fuego.</div>
+ <div class="filter-data border"><h3>ORDENAR</h3></div>
+ <div class="filter-data border"><input type="radio" />A-Z.</div>
+ <div class="filter-data border"><input type="radio" />Z-A</div>
+ <div class="filter-data border"><button>TODOS</button></div>
+</div>
+ <script src="./data/pokemon/pokemon.js"></script>
+ <script src="data.js"></script>
+ <script src="main.js"></script>
 </body>
 
 </html>
