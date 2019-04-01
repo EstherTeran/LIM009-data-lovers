@@ -1,17 +1,16 @@
-const data = POKEMON.pokemon;
-const root = document.getElementById('root');
-for(let i=0;i<data.length;i++){
-  root.innerHTML += `
-   <div class = pokes>
-   <div> <img src="${data[i].img} " alt="${data[i].name} "></img>
-    </div>
-    <div>
-     <p> Nombre:${data[i].name} </p>
-     <p> Tipo: ${data[i].type} </p> 
-     <p> Altura: ${data[i].height} </p>  
-     <p> Peso: ${data[i].weight} </p> 
-     <p> Huevos: ${data[i].egg} </p> 
- </div> </div>
- `}
 
- 
+/* Manejo del DOM */
+const pokemon = POKEMON.pokemon;
+const root = document.getElementById('root');
+for(let i=0;i<pokemon.length;i++){
+ root.innerHTML += `
+  <div class="column-4 pokemon-class">
+  <div class="center"> <img src="${pokemon[i].img} " alt="${pokemon[i].name} "></img>
+   </div>
+   <div class="color">
+   Nombre:${pokemon[i].name} </br>
+  Tipo: ${pokemon[i].type} </br>
+  Altura: ${pokemon[i].height} </br> 
+  Peso: ${pokemon[i].weight} </br>
+    Huevos: ${pokemon[i].egg} </br> 
+ </div> </div>`}
