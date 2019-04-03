@@ -1,63 +1,89 @@
 *{
     box-sizing: border-box;
-}
-body{
     margin:0%;
     padding: 0%;
+    text-align: center;
 }
-.container-general{
-
-margin-left: 5%;
-margin-right:5%;
-width:90%;
+body{
+    padding: 10px;
 }
-.row {
-    clear: both;
+.width-100{
+    width:100%;
 }
-/* .column {
-    float: left;
-    width: 10%;
-} */
-.title{
-    float: left;
+.container-title{
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.container-search{
+    height:40px;
+    padding: 5px;
+}
+.element-search{
+    height: 30px;
+margin-top: auto;
+margin-bottom: auto;
+}
+.select-sm {
     width: 100%;
-    text-align: center;
+    height: 30px;
+margin-top: auto;
+margin-bottom: auto;
 }
-.buscar{
-    float: left;
-    width: 100%;
-    text-align: center;
+.button-search{
+padding:0px 10px;
 }
-.root{
-    float: right;
-    width: 90%;
+.container-filter-sm{
+display: block;
+height:40px;
+padding: 5px;
 }
-.filter-data{
-    float: left;
-    width: 10%;
-}
-
-.border {
-    border-color:rgb(0, 0, 255);
-    border-style: solid;
-}
-.backgraund-green {
-    background-color: rgb(48, 177, 48);
-}
-.pokemon-class{
-    float: left;
-    height:18%;
-  width: 18%;
-  margin-left:1.66666666666666%;
-  
-}
-.color{
-    background-color: aquamarine;
-    text-align: center;
-}
-.center {
+.container-sort-sm{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
+    height:40px;
+    padding: 5px;
+}
+.cell {  
+    background:rgb(243, 244, 245); 
+    outline: 1px solid rgb(225, 65, 185);
+    padding: auto; 
+ }
+.f-l {
+    float: left;
+
+}
+   .container-interaction {
+display: none;
+  } 
+ .container-pokemons {
+    width: 100%;
+     /* width:85%; */
+ }
+ .pokemoncitos{
+     float: left;
+     display: block;
+     width: 48%;
+     margin: 0 3px 5px 3px;
+     /* margin-bottom: 5px; */
+     background-color: blue;
+     color: white;
+ }
+ /* desktop */
+ @media  (min-width: 600px){
+    .container-interaction {
+        width: 15%;
+        height: 50vh;
+        display: block;
+      } 
+      .container-pokemons{
+      width:85%;
+    }
+    .container-filter-sm, .container-sort-sm{
+      display:none;
+    }
+    .pokemoncitos{
+        width: 200px;
+        display: inline-block;
+    }
+}
