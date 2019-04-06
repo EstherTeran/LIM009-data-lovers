@@ -40,13 +40,3 @@ const printPokemons = (pokemons) => {
 }
 root.innerHTML=printPokemons(data);
 
-let newarray=[];
-let suma = 0;
-let promedio;
-for(let i=0; i<data.length; i++){
-newarray.push(parseFloat((data[i].weight).slice(0,-2)));
-suma += newarray[i];
-promedio = suma/newarray.length;
- }
-
- console.log(promedio);
