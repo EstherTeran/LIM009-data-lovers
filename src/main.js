@@ -1,28 +1,25 @@
-const root = document.getElementById('root');
+
+/* Manejo del DOM */
 const data = POKEMON.pokemon;
+const root = document.getElementById('root');
 
-const paint=(data)=>{
-for(let i=0;i<data.length;i++){
- root.innerHTML += `
-  <div class="column-4 pokemon-class">
-  <div class="center"> <img src="${data[i].img} " alt="${data[i].name} "></img>
-   </div>
-   <div class="color">
-  
-    Nombre:${data[i].name} </br>
-  Tipo: ${data[i].type} </br>
-  Altura: ${data[i].height} </br> 
-  Peso: ${data[i].weight} </br>
-    Huevos: ${data[i].egg} </br> 
- 
-</div> </div>`}
+ const printPokemons = (pokemons) =>{
+  let template="";  // Variable donde se almacenan los pokemones 
+  for(let i=0;i<pokemons.length;i++){
+    template += `
+     <div class="pokemoncitos" >
+     <div > <img src="${pokemons[i].img} " alt="${pokemons[i].name} "></img>
+      </div>
+      <div class="color">  
+       Nombre:${pokemons[i].name} </br>
+     Tipo: ${pokemons[i].type} </br> 
+     Altura: ${pokemons[i].height} </br>  
+     Peso: ${pokemons[i].weight} </br>  
+   </div> </div>
+   `}
+
+  return template;
 }
-paint(data);
 
-
-
- 
-
-
-
-
+// LLamamos la funcion que trabajara con la data
+root.innerHTML=printPokemons(data);

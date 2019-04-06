@@ -5,28 +5,36 @@
  <meta charset="utf-8">
  <title>Data Lovers</title>
  <link rel="stylesheet" href="style.css" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
- <div clas="container-general backgraund-green">
- <header>
- <div class="title border"><h1> POKÉMON WORLD &#4044;</h1></div>
+  <header class="width-100 cell container-title">
+    <h2 >POKÉMON WORLD &#4044;</h2>
 </header>
-<div class="buscar border"> <input type="text" placeholder="Busca Tu Pokémon 🔍">
-   <button>Buscar</button></div>
-   <div class="root border" id="root"></div>
- <div class="filter-data border"><h2>TIPO</h2></div>
- <div class="filter-data border"><input type="radio" />Aire.</div>
- <div class="filter-data border"><input type="radio" />Agua. </div>
- <div class="filter-data border"><input type="radio" />Fuego.</div>
- <div class="filter-data border"><h3>ORDENAR</h3></div>
- <div class="filter-data border"><input type="radio" />A-Z.</div>
- <div class="filter-data border"><input type="radio" />Z-A</div>
- <div class="filter-data border"><button>TODOS</button></div>
+<div class="width-100 cell ">
+<div class="container-search">
+    <input class="element-search" type="text" placeholder="Busca Tu Pokémon ">
+    <button class="element-search button-search">🔍</button>
 </div>
- <script src="./data/pokemon/pokemon.js"></script>
- <script src="data.js"></script>
- <script src="main.js"></script>
+<div class="container-selector">
+<div class="container-filter-sm cell" >
+        <select name="" id="" class="select-sm" >
+        <option value="Aire">Aire</option>
+        <option value="Aire">Agua</option>
+        <option value="Aire">Fuego</option>
+        </select>
+</div>
+<div class="container-sort-sm cell" >
+        <select name="" id="" class="select-sm">
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+        </select>
+</div></div>
+<div class="container-pokemons f-l cell" id="root"></div>
+</div>
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>

@@ -23,32 +23,20 @@ let nuevosPokemones = [];
   window.filterData= filterData;
 
 
-  const sortDataAZ = (a,b) => {
-    if(a.name < b.name)
-      return 1;
-    if(a.name > b.name)
-      return -1;
-    return 0;
-  }
-  window.sortDataAZ= sortDataAZ;
 
-  const sortDataZA = (a,b) => {
-    if(a.name > b.name)
-      return 1;
-    if(a.name < b.name)
-      return -1;
-    return 0;
-  }
-  window.sortDataZA= sortDataZA;
+const average = (pokemons,peso)=>{
 
-const average = () => {
-  let nuevoArray=[];
- for(let i=0; i<data.length; i++){
- copy.push(parseInt((data[i].weight).slice(0,-2)));
+let newarray=[];
+ let suma = 0;
+ let promedio;
+
+ for(let i=0; i<pokemon.length; i++){
+ newarray.push(parseFloat((pokemon[i].weight).slice(0,-2)));
+ suma += newarray[i];
  }
- 
- let suma=(new Function("return" + nuevoArray.join("+")))();
 
- let media= suma/nuevoArray.length;
-}
+ promedio = suma/newarray.length;
+ return promedio;
+
+ }
 window.average = average;
