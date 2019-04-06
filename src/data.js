@@ -1,5 +1,4 @@
 /* Manejo de data */
-
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 const filterPokemons = (pokemons,query) => {
@@ -12,7 +11,6 @@ const filterPokemons = (pokemons,query) => {
   return arr;
 }
 window.filterPokemons = filterPokemons;
-
 
 const average = (pokemons,peso)=>{
 
@@ -29,4 +27,4 @@ const average = (pokemons,peso)=>{
    return promedio;
   
    }
-  window.average = average;
+  window.average = average
