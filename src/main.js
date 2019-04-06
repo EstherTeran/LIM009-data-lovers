@@ -28,7 +28,8 @@ const printPokemons = (pokemons) => {
      Peso: ${pokemons[i].weight} </br> 
     Huevos: ${pokemons[i].egg} </br>  
    </div> </div>
-   `}
+   `;
+  }
   return template;
 }
 root.innerHTML=printPokemons(data);
