@@ -2,39 +2,57 @@
 <html>
 
 <head>
- <meta charset="utf-8">
- <title>Data Lovers</title>
- <link rel="stylesheet" href="style.css" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Lovers</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header class="width-100 cell container-title">
-    <h2 >POKÉMON WORLD &#4044;</h2>
-</header>
-<div class="width-100 cell ">
-<div class="container-search">
-    <input class="element-search" type="text" placeholder="Busca Tu Pokémon ">
-    <button class="element-search button-search">🔍</button>
-</div>
-<div class="container-selector">
-<div class="container-filter-sm cell" >
-        <select name="" id="" class="select-sm" >
-        <option value="Aire">Aire</option>
-        <option value="Aire">Agua</option>
-        <option value="Aire">Fuego</option>
-        </select>
-</div>
-<div class="container-sort-sm cell" >
-        <select name="" id="" class="select-sm">
-        <option value="A-Z">A-Z</option>
-        <option value="Z-A">Z-A</option>
-        </select>
-</div></div>
-<div class="container-pokemons f-l cell" id="root"></div>
-</div>
-  <script src="./data/pokemon/pokemon.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
-</body>
 
-</html>
+<body>
+    <header class="width-100 cell container-title">
+        <h2 class="title">POKÉMON WORLD &#4044;</h2>
+    </header>
+    <div class="width-100 cell ">
+        <div class="container-search cell">
+            <input class="element-search" id="inputSearch"type="text" placeholder="Busca Tu Pokémon ">
+            <button id="buttonSearch" class="element-search button-search">🔍</button>
+        </div>
+        <div class="derecha cell">
+            <div class="container-filter-sm cell">
+                <select name="" id="selecType" class="select-sm">
+                    <option value="Grass">Hierba</option>
+                    <option value="Poison">Veneno</option>
+                    <option value="Fire">Fuego</option>
+                    <option value="Flying">Volador</option>
+                    <option value="Water">Agua</option>
+                    <option value="Ground">Suelo</option>
+                    <option value="Rock">Roca</option>
+                    <option value="Electric">Electrico</option>
+                    <option value="Psychic">Psíquico</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Ice">Hielo</option>
+                    <option value="Ghost">Fantasma</option>
+                    <option value="Fighting">Lucha</option>
+                    <option value="Bug">Bicho</option>
+                    <option value="Dragon">Dragón</option>
+                    <option value="Todos">TODOS</option>
+                
+                </select>
+    
+            </div>
+
+
+            <div class="container-sort-sm cell">
+                <select name="" id="" class="select-sm">
+                    <option value="A-Z">A-Z</option>
+                    <option value="Z-A">Z-A</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="container-pokemons f-l cell" id="root"></div>
+    </div>
+    <script src="./data/pokemon/pokemon.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>

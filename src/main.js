@@ -1,26 +1,52 @@
-
-/* Manejo del DOM */
 const data = POKEMON.pokemon;
 const root = document.getElementById('root');
+const selecType = document.getElementById("selecType");
+const inputSearch = document.getElementById("inputSearch");
+const buttonSearch = document.getElementById("buttonSearch");
 
- const printPokemons = (pokemons) =>{
-  let template=" ";
-  for(let i=0;i<pokemons.length;i++){
+buttonSearch.addEventListener("click",()=>{
+  inputSearch.innerHTML
+});
+
+selecType.addEventListener("change",()=>{
+  root.innerHTML = "";
+  if(selecType.value === "Todos"){
+    root.innerHTML = printPokemons(data);
+  }
+  else{
+  const dataFiltrada = window.filterPokemons(data, selecType.value);
+  root.innerHTML = printPokemons(dataFiltrada);
+  }
+});
+
+
+const printPokemons = (pokemons) => {
+  let template = " ";
+  for (let i = 0; i < pokemons.length; i++) {
     template += `
      <div class="pokemoncitos" >
-     <div > <img src="${pokemons[i].img} " alt="${pokemons[i].name} "></img>
+     <div> <img src="${pokemons[i].img} " alt="${pokemons[i].name}"></img>
       </div>
       <div class="color">  
        Nombre:${pokemons[i].name} </br>
      Tipo: ${pokemons[i].type} </br> 
      Altura: ${pokemons[i].height} </br>  
      Peso: ${pokemons[i].weight} </br> 
-    
-      Huevos: ${pokemons[i].egg} </br>  
-   </div> </div>
-   `}
+    Huevos: ${pokemons[i].egg} </br>  
+    </div>
+    </div>`;
+  }
   return template;
 }
-
-// console.log(printPokemons(data))
 root.innerHTML=printPokemons(data);
+
+let newarray=[];
+let suma = 0;
+let promedio;
+for(let i=0; i<data.length; i++){
+newarray.push(parseFloat((data[i].weight).slice(0,-2)));
+suma += newarray[i];
+promedio = suma/newarray.length;
+ }
+
+ console.log(promedio);
