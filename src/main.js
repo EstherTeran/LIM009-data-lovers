@@ -1,12 +1,6 @@
 const data = POKEMON.pokemon;
 const root = document.getElementById('root');
 const selecType = document.getElementById("selecType");
-const inputSearch = document.getElementById("inputSearch");
-const buttonSearch = document.getElementById("buttonSearch");
-
-buttonSearch.addEventListener("click",()=>{
-  inputSearch.innerHTML
-});
 
 selecType.addEventListener("change",()=>{
   root.innerHTML = "";
@@ -18,45 +12,22 @@ selecType.addEventListener("change",()=>{
   root.innerHTML = printPokemons(dataFiltrada);
   }
 });
- const printPokemons = (pokemons) =>{
-  let template="";  // Variable donde se almacenan los pokemones 
-  for(let i=0;i<pokemons.length;i++){
-const printPokemons = (pokemons) => {
-  let template = " ";
-  for (let i = 0; i < pokemons.length; i++) {
-
-    template += `
-     <div class="pokemoncitos" >
-     <div> <img src="${pokemons[i].img} " alt="${pokemons[i].name}"></img>
+  const printPokemons = (pokemons) => {
+    let template = " ";
+    for (let i = 0; i < pokemons.length; i++) {
+      template += `
+       <div class="pokemoncitos" >
+       <div> <img src="${pokemons[i].img} " alt="${pokemons[i].name}"></img>
+        </div>
+        <div class="color">  
+         Nombre:${pokemons[i].name} </br>
+       Tipo: ${pokemons[i].type} </br> 
+       Altura: ${pokemons[i].height} </br>  
+       Peso: ${pokemons[i].weight} </br> 
+      Huevos: ${pokemons[i].egg} </br>  
       </div>
-      <div class="color">  
-       Nombre:${pokemons[i].name} </br>
-     Tipo: ${pokemons[i].type} </br> 
-     Altura: ${pokemons[i].height} </br>  
-     Peso: ${pokemons[i].weight} </br>  
-   </div> </div>
-   `}
-
-  return template;
-}
-
-// LLamamos la funcion que trabajara con la data
-     Peso: ${pokemons[i].weight} </br> 
-    Huevos: ${pokemons[i].egg} </br>  
-    </div>
-    </div>`;
+      </div>`;
+    }
+    return template;
   }
-  return template;
-}
-root.innerHTML=printPokemons(data);
-
-let newarray=[];
-let suma = 0;
-let promedio;
-for(let i=0; i<data.length; i++){
-newarray.push(parseFloat((data[i].weight).slice(0,-2)));
-suma += newarray[i];
-promedio = suma/newarray.length;
- }
-
- console.log(promedio);
+  root.innerHTML=printPokemons(data);
