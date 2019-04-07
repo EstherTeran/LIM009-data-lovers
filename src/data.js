@@ -28,3 +28,5 @@ const average = (pokemons,peso)=>{
   
    }
   window.average = average
+
+  document.getElementById("resultado").value = resultado;

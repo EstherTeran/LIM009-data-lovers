@@ -31,3 +31,31 @@ selecType.addEventListener("change",()=>{
     return template;
   }
   root.innerHTML=printPokemons(data);
+
+
+  
+let promedio;
+let finalPromedio;
+
+  document.getElementById('input').addEventListener("click",()=>{
+    Promedio=document.getElementById("resultado").value = resultado;
+    finalPromedio=window.average(pokemons, peso);
+   
+  })
+   
+  // const elementoPromedio=document.getElementById("resultado").value = resultado;
+  // let data = POKEMON.pokemon;
+  // let promedio=window.average(data);
+ 
+
+
+// const computeStats=(data)=>{
+//   //(15+25+35)/3
+//      let statsName="hp";
+//     let getStats= data.map((champion)=>{ return champion.stats[statsName];})   
+//    let sumatory=0;
+//    for(let i=0;getStats.length>i;i++){
+//      sumatory+=getStats[i];
+//    }
+//    let calculo=((sumatory)/getStats.length).toFixed(2);
+//    return calculo;
