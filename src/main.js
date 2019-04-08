@@ -3,6 +3,7 @@ const root = document.getElementById('root');
 const selecType = document.getElementById("selecType");
 const OrderAz=document.getElementById("OrderAz");
 
+
 OrderAz.addEventListener("change",()=>{
   if(OrderAz.value==="Ascendente"){
     const ordenadoAz=data.sort(window.compareNames);
@@ -13,6 +14,7 @@ root.innerHTML=window.printPokemons(ordenadoAz);
     root.innerHTML=window.printPokemons(ordenadoZA);
   }
 })
+
 
 selecType.addEventListener("change",()=>{
   root.innerHTML = "";
@@ -26,7 +28,9 @@ selecType.addEventListener("change",()=>{
 });
   root.innerHTML=printPokemons(data);
 
-
-
   let promedio= window.average(data);
-  root.innerHTML=` El Promedio del peso es:  ${promedio} `;
+prom.innerHTML=` El Promedio del peso es:  ${promedio} `;
+
+
+
+
