@@ -64,13 +64,13 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 
 ## Testeo del producto con usuario
 
-###Baja fidelidad
+Baja fidelidad
 ![alta-fidelidad](https://imgbbb.com/images/2019/04/08/66c4d3d6-06a4-4da2-ac25-b143ad42013f.md.jpg).
 
 
-###Alta fidelidad
+Alta fidelidad
 ![alta-fidelidad](https://imgbbb.com/images/2019/04/08/6a4d4969-36dc-4f8f-aafb-71fdb1756626.md.jpg).
 
 
-###Producto final
+Producto final
 ![alta-fidelidad](https://imgbbb.com/images/2019/04/08/98b82ca1-c5aa-4947-83f3-a2d0148a7794.md.jpg).
