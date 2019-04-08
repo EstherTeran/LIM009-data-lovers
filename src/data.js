@@ -30,8 +30,8 @@ const average = (pokemons,peso)=>{
   let newarray=[];
    let suma = 0;
    let promedio;
-  for(let i=0; i<pokemon.length; i++){
-    newarray.push(parseFloat((pokemon[i].weight).slice(0,-2)));
+  for(let i=0; i<data.length; i++){
+    newarray.push(parseFloat((data[i].weight).slice(0,-2)));
     suma += newarray[i];
     }
    
@@ -52,8 +52,7 @@ const average = (pokemons,peso)=>{
          Nombre:${pokemons[i].name} </br>
        Tipo: ${pokemons[i].type} </br> 
        Altura: ${pokemons[i].height} </br>  
-       Peso: ${pokemons[i].weight} </br> 
-      Huevos: ${pokemons[i].egg} </br>  
+       Peso: ${pokemons[i].weight} </br>  
       </div>
       </div>`;
     }
