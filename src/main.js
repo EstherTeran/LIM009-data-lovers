@@ -29,8 +29,4 @@ selecType.addEventListener("change",()=>{
   root.innerHTML=printPokemons(data);
 
   let promedio= window.average(data);
-prom.innerHTML=` El Promedio del peso es:  ${promedio} `;
-
-
-
-
+prom.innerHTML=` El Promedio del peso es:  ${promedio} 
