@@ -1,6 +1,18 @@
 const data = POKEMON.pokemon;
 const root = document.getElementById('root');
 const selecType = document.getElementById("selecType");
+const OrderAz=document.getElementById("OrderAz");
+
+OrderAz.addEventListener("change",()=>{
+  if(OrderAz.value==="Ascendente"){
+    const ordenadoAz=data.sort(window.compareNames);
+root.innerHTML=window.printPokemons(ordenadoAz);
+  }
+  else if (OrderAz.value==="Descendente"){
+    const ordenadoZA=data.sort(window.compareNames).reverse();
+    root.innerHTML=window.printPokemons(ordenadoZA);
+  }
+})
 
 selecType.addEventListener("change",()=>{
   root.innerHTML = "";
@@ -12,22 +24,4 @@ selecType.addEventListener("change",()=>{
   root.innerHTML = printPokemons(dataFiltrada);
   }
 });
-  const printPokemons = (pokemons) => {
-    let template = " ";
-    for (let i = 0; i < pokemons.length; i++) {
-      template += `
-       <div class="pokemoncitos" >
-       <div> <img src="${pokemons[i].img} " alt="${pokemons[i].name}"></img>
-        </div>
-        <div class="color">  
-         Nombre:${pokemons[i].name} </br>
-       Tipo: ${pokemons[i].type} </br> 
-       Altura: ${pokemons[i].height} </br>  
-       Peso: ${pokemons[i].weight} </br> 
-      Huevos: ${pokemons[i].egg} </br>  
-      </div>
-      </div>`;
-    }
-    return template;
-  }
   root.innerHTML=printPokemons(data);
