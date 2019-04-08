@@ -26,12 +26,12 @@ window.filterPokemons = filterPokemons;
   }
   window.compareNames=compareNames;
   
-const average = (pokemons,peso)=>{
+const average = (pokemons)=>{
   let newarray=[];
    let suma = 0;
    let promedio;
-  for(let i=0; i<data.length; i++){
-    newarray.push(parseFloat((data[i].weight).slice(0,-2)));
+  for(let i=0;i<pokemons.length; i++){
+    newarray.push(parseFloat((pokemons[i].weight).slice(0,-2)));
     suma += newarray[i];
     }
    
