@@ -25,3 +25,8 @@ selecType.addEventListener("change",()=>{
   }
 });
   root.innerHTML=printPokemons(data);
+
+
+
+  let promedio= window.average(data);
+  root.innerHTML=` El Promedio del peso es:  ${promedio} `;
