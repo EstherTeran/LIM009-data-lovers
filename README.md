@@ -49,3 +49,28 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 -El usuario puede ordenar por Nombre de la A-Z los pokemones.
 </li>
 </ul>
+
+<li>HISTORIA DE USUARIO 3</li>
+<ul>
+<li>Yo como usuario quiero ver el promedio de los pesos de los pokemones: 
+</li>
+<ul>
+<li>CRITERIOS DE ACEPTACIÓN:
+-El usuario puede ver el promedio del peso en la web
+-El usuario puede ver la página web en su celular 
+</li>
+</ul>
+
+
+## Testeo del producto con usuario
+
+###Baja fidelidad
+![alta-fidelidad](https://imgbbb.com/images/2019/04/08/66c4d3d6-06a4-4da2-ac25-b143ad42013f.md.jpg).
+
+
+###Alta fidelidad
+![alta-fidelidad](https://imgbbb.com/images/2019/04/08/6a4d4969-36dc-4f8f-aafb-71fdb1756626.md.jpg).
+
+
+###Producto final
+![alta-fidelidad](https://imgbbb.com/images/2019/04/08/98b82ca1-c5aa-4947-83f3-a2d0148a7794.md.jpg).
