@@ -33,7 +33,7 @@ const average = (pokemons)=>{
   for(let i=0;i<pokemons.length; i++){
     newarray.push(parseFloat((pokemons[i].weight).slice(0,-2)));
     suma += newarray[i];
-    }
+  }
    
     promedio = suma/newarray.length;
     return promedio;
