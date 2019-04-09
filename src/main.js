@@ -1,7 +1,8 @@
 const data = POKEMON.pokemon;
 const root = document.getElementById('root');
 const selecType = document.getElementById("selecType");
-const OrderAz=document.getElementById("OrderAz");
+const OrderAz = document.getElementById("OrderAz");
+const promedio = document.getElementById("prom")
 
 OrderAz.addEventListener("change",()=>{
   if(OrderAz.value==="Ascendente"){
@@ -14,8 +15,9 @@ root.innerHTML=window.printPokemons(ordenadoAz);
   }
 })
 
+
 selecType.addEventListener("change",()=>{
-  root.innerHTML = "";
+  root.innerHTML="" ;
   if(selecType.value === "Todos"){
     root.innerHTML = printPokemons(data);
   }
