@@ -2,7 +2,8 @@ const data = POKEMON.pokemon;
 const root = document.getElementById('root');
 const selecType = document.getElementById("selecType");
 const OrderAz = document.getElementById("OrderAz");
-const promedio = document.getElementById("prom")
+const prom = document.getElementById("prom")
+
 
 OrderAz.addEventListener("change",()=>{
   if(OrderAz.value==="Ascendente"){
@@ -27,3 +28,6 @@ selecType.addEventListener("change",()=>{
   }
 });
   root.innerHTML=printPokemons(data);
+
+  let promedio= window.average(data);
+prom.innerHTML=` El Promedio total del peso de los pokemones es:  ${promedio} `

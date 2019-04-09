@@ -26,14 +26,14 @@ window.filterPokemons = filterPokemons;
   }
   window.compareNames=compareNames;
   
-const average = (pokemons,peso)=>{
+const average = (pokemons)=>{
   let newarray=[];
    let suma = 0;
    let promedio;
   for(let i=0; i<pokemons.length; i++){
     newarray.push(parseFloat((pokemons[i].weight).slice(0,-2)));
     suma += newarray[i];
-    }
+  }
    
     promedio = suma/newarray.length;
     return promedio;
@@ -52,8 +52,7 @@ const average = (pokemons,peso)=>{
          Nombre:${pokemons[i].name} </br>
        Tipo: ${pokemons[i].type} </br> 
        Altura: ${pokemons[i].height} </br>  
-       Peso: ${pokemons[i].weight} </br> 
-      Huevos: ${pokemons[i].egg} </br>  
+       Peso: ${pokemons[i].weight} </br>  
       </div>
       </div>`;
     }

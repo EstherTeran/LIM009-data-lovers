@@ -20,24 +20,23 @@ body{
     height:40px;
     padding: 5px;
 }
-.element-search{
+ .element-search{
     height: 30px;
 margin-top: auto;
 margin-bottom: auto;
-}
+} */
 .select-sm {
     width: 100%;
     height: 30px;
 margin-top: auto;
 margin-bottom: auto;
 }
-.button-search{
-padding:0px 10px;
-}
+
 .derecha{
     width:100%;
     height: 40px;
 }
+
 .container-filter-sm{
 display: block;
 height:40px;
