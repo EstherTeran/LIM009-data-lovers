@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">87.1% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>27/31</span>
+        <span class='fraction'>36/36</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">37.5% </span>
+        <span class="strong">87.5% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>3/8</span>
+        <span class='fraction'>14/16</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>5/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">85.71% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>24/28</span>
+        <span class='fraction'>33/33</span>
       </div>
     </div>
     <p class="quiet">
@@ -106,7 +106,15 @@
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
 <a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -116,16 +124,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -161,6 +176,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -176,16 +192,23 @@ const filterPokemons = (pokemons, query) =&gt; {
   }
   return arr;
 };
+const sortData = (pokemons, sortby, orderDirection) =&gt; {
+  if (orderDirection === 'Ascendente' &amp;&amp; sortby === 'name') {
+    return pokemons.sort(compareNames);
+  } else <span class="missing-if-branch" title="else path not taken" >E</span>if (orderDirection === 'Descendente' &amp;&amp; sortby === 'name') {
+    return pokemons.sort(compareNames).reverse();
+  }
+};
 &nbsp;
-function compareNames(a, z) {
-  a = a.name;
-  z = z.name;
-  <span class="missing-if-branch" title="else path not taken" >E</span>if (a &gt; z) {
+function compareNames(objectA, objectZ) {
+  objectA = objectA.name;
+  objectZ = objectZ.name;
+  if (objectA &gt; objectZ) {
     return 1;
-  } else <span class="cstat-no" title="statement not covered" >if (a &lt; z) {</span>
-<span class="cstat-no" title="statement not covered" >    return -1;</span>
-  } else <span class="cstat-no" title="statement not covered" >if (a === z) {</span>
-<span class="cstat-no" title="statement not covered" >    return 0;</span>
+  } else if (objectA &lt; objectZ) {
+    return -1;
+  } else <span class="missing-if-branch" title="else path not taken" >E</span>if (objectA === objectZ) {
+    return 0;
   }
 }
 &nbsp;
@@ -206,10 +229,10 @@ const printPokemons = pokemons =&gt; {
   let template = '';
   for (let i = 0; i &lt; pokemons.length; i++) {
     template += `
-       &lt;div class="pokemoncitos" &gt;
-       &lt;div&gt; &lt;img src="${pokemons[i].img} " alt="${pokemons[i].name}"&gt;&lt;/img&gt;
+       &lt;div class='pokemoncitos' &gt;
+       &lt;div&gt; &lt;img src='${pokemons[i].img} ' alt='${pokemons[i].name}'&gt;&lt;/img&gt;
         &lt;/div&gt;
-        &lt;div class="color"&gt;  
+        &lt;div class='color'&gt;  
          Nombre:${pokemons[i].name} &lt;/br&gt;
        Tipo: ${pokemons[i].type} &lt;/br&gt; 
        Altura: ${pokemons[i].height} &lt;/br&gt;  
@@ -224,7 +247,8 @@ window.GlobalFunctions = {
   printPokemons,
   filterPokemons,
   average,
-  compareNames
+  compareNames,
+  sortData
 };
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -232,7 +256,7 @@ window.GlobalFunctions = {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Apr 09 2019 20:42:12 GMT-0500 (GMT-05:00)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 10 2019 13:23:02 GMT-0500 (GMT-05:00)
 </div>
 </div>
 <script src="prettify.js"></script>

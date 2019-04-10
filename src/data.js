@@ -8,15 +8,22 @@ const filterPokemons = (pokemons, query) => {
   }
   return arr;
 };
+const sortData = (pokemons, sortby, orderDirection) => {
+  if (orderDirection === 'Ascendente' && sortby === 'name') {
+    return pokemons.sort(compareNames);
+  } else if (orderDirection === 'Descendente' && sortby === 'name') {
+    return pokemons.sort(compareNames).reverse();
+  }
+};
 
-function compareNames(a, z) {
-  a = a.name;
-  z = z.name;
-  if (a > z) {
+function compareNames(objectA, objectZ) {
+  objectA = objectA.name;
+  objectZ = objectZ.name;
+  if (objectA > objectZ) {
     return 1;
-  } else if (a < z) {
+  } else if (objectA < objectZ) {
     return -1;
-  } else if (a === z) {
+  } else if (objectA === objectZ) {
     return 0;
   }
 }
@@ -38,10 +45,10 @@ const printPokemons = pokemons => {
   let template = '';
   for (let i = 0; i < pokemons.length; i++) {
     template += `
-       <div class="pokemoncitos" >
-       <div> <img src="${pokemons[i].img} " alt="${pokemons[i].name}"></img>
+       <div class='pokemoncitos' >
+       <div> <img src='${pokemons[i].img} ' alt='${pokemons[i].name}'></img>
         </div>
-        <div class="color">  
+        <div class='color'>  
          Nombre:${pokemons[i].name} </br>
        Tipo: ${pokemons[i].type} </br> 
        Altura: ${pokemons[i].height} </br>  
@@ -56,5 +63,6 @@ window.GlobalFunctions = {
   printPokemons,
   filterPokemons,
   average,
-  compareNames
+  compareNames,
+  sortData
 };
