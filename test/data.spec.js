@@ -91,7 +91,7 @@ describe('Realizando test a las funciones', () => {
     expect(typeof GlobalFunctions.compareNames).toBe('function');
   });
   it('deberia compara los nombres ', () => {
-    expect(GlobalFunctions.compareNames('objectA', 'objectZ')).toEqual(0);
+    expect(GlobalFunctions.compareNames('objectA.name', 'objectZ.name')).toEqual(undefined);
   });
   it('deberia ser una funcion', () => {
     expect(typeof GlobalFunctions.sortData).toBe('function');
@@ -191,6 +191,9 @@ describe('Realizando test a las funciones', () => {
         'Steel'
       ]
     }]);
+  });
+  it('la funcion deberia retornar Undefined', () => {
+    expect(GlobalFunctions.sortData(data, 'white', 'Descendente')).toEqual(undefined);
   });
   it('debería ser una función', () => {
     expect(typeof GlobalFunctions.printPokemons).toBe('function');

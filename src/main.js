@@ -5,13 +5,8 @@ const OrderAz = document.getElementById('OrderAz');
 const averageInformation = document.getElementById('prom');
 
 OrderAz.addEventListener('change', () => {
-  if (OrderAz.value === 'Ascendente') {
-    const upward = GlobalFunctions.sortData(dataBase, 'name', OrderAz.value);
-    root.innerHTML = GlobalFunctions.printPokemons(upward);
-  } else if (OrderAz.value === 'Descendente') {
-    const falling = GlobalFunctions.sortData(dataBase, 'name', OrderAz.value);
-    root.innerHTML = GlobalFunctions.printPokemons(falling);
-  }
+  const upward = GlobalFunctions.sortData(dataBase, 'name', OrderAz.value);
+  root.innerHTML = GlobalFunctions.printPokemons(upward);
 });
 
 selecType.addEventListener('change', () => {

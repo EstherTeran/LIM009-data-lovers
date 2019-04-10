@@ -23,11 +23,10 @@ function compareNames(objectA, objectZ) {
     return 1;
   } else if (objectA < objectZ) {
     return -1;
-  } else if (objectA === objectZ) {
-    return 0;
+  // } else if (objectA === objectZ) {
+  //   return 0;
   }
 }
-
 const average = pokemons => {
   let newarray = [];
   let suma = 0;
