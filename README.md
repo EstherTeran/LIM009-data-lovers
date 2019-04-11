@@ -19,7 +19,7 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 
 
 ## Prototipo de alta fidelidad
-[alta-fidelidad](https://www.figma.com/file/C3p3GzbBWtHmGxNdcLoPCYEV/POKEMON?node-id=0%3A1)
+[LINK FIGMA PARA VER PROTOTIPO DE ALTA FIDELIDAD](https://www.figma.com/file/C3p3GzbBWtHmGxNdcLoPCYEV/POKEMON?node-id=0%3A1)
 
 ![alta-fidelidad](https://imgbbb.com/images/2019/04/11/Captura.md.png)
 
