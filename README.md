@@ -20,9 +20,8 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 
 ![baja-fidelidad](https://imgbbb.com/images/2019/03/26/ad10cb4c-2f50-40f2-8525-4e2eddb7f83a.md.jpg).
 
-
 ## Prototipo de alta fidelidad
-
+![alta-fidelidad](https://www.figma.com/file/C3p3GzbBWtHmGxNdcLoPCYEV/POKEMON?node-id=0%3A1).
 ![alta-fidelidad](https://imgbbb.com/images/2019/04/01/Captura.md.png).
 
 ## Historias de usuario
@@ -35,6 +34,10 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 <li>CRITERIOS DE ACEPTACIÓN:
 -El usuario puede ver todos los pokemones y su información en la web
 -El usuario puede ver la página web en su celular 
+</li> 
+<li>DEFINICIÓN DE TERMINADO.
+-El producto muestra los pokemones en la web.
+-el producto es renponsive.
 </li>
 </ul>
 
@@ -48,6 +51,10 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 -El usuario puede ver la página web en su celular 
 -El usuario puede ordenar por Nombre de la A-Z los pokemones.
 </li>
+<li>DEFINICION DE TERMINADO.
+-El producto filtra los pokemones.
+-el producto ordena por nombres de a A-Z y de la Z-A.
+</li>
 </ul>
 
 <li>HISTORIA DE USUARIO 3</li>
@@ -59,7 +66,7 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 -El usuario puede ver el promedio del peso en la web
 -El usuario puede ver la página web en su celular 
 </li>
-</ul>
+</ul> 
 
 ## Testeo del producto con usuario
 
