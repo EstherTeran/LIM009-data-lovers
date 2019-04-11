@@ -12,17 +12,16 @@ En Pokemon World podran encontrar las caracteristicas e informacion necesaria pa
 
 ## Prototipo de baja fidelidad
 
-![baja-fidelidad](https://imgbbb.com/images/2019/04/08/75528479-69cb-47bd-b416-672e98190966.md.jpg).
+![baja-fidelidad](https://imgbbb.com/images/2019/04/08/75528479-69cb-47bd-b416-672e98190966.md.jpg)
 
 
-![baja-fidelidad](https://imgbbb.com/images/2019/03/26/3dbed4b5-f692-469e-9b51-b8bc8f540736.md.jpg).
+![baja-fidelidad](https://imgbbb.com/images/2019/04/08/3dbed4b5-f692-469e-9b51-b8bc8f540736.md.jpg)
 
-
-![baja-fidelidad](https://imgbbb.com/images/2019/03/26/ad10cb4c-2f50-40f2-8525-4e2eddb7f83a.md.jpg).
 
 ## Prototipo de alta fidelidad
-![alta-fidelidad](https://www.figma.com/file/C3p3GzbBWtHmGxNdcLoPCYEV/POKEMON?node-id=0%3A1).
-![alta-fidelidad](https://imgbbb.com/images/2019/04/01/Captura.md.png).
+[alta-fidelidad](https://www.figma.com/file/C3p3GzbBWtHmGxNdcLoPCYEV/POKEMON?node-id=0%3A1)
+
+![alta-fidelidad](https://imgbbb.com/images/2019/04/11/Captura.md.png)
 
 ## Historias de usuario
 
