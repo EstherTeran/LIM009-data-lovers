@@ -17,14 +17,12 @@ const sortData = (pokemons, sortby, orderDirection) => {
 };
 
 function compareNames(objectA, objectZ) {
-  objectA = objectA.name;
-  objectZ = objectZ.name;
-  if (objectA > objectZ) {
-    return 1;
-  } else if (objectA < objectZ) {
-    return -1;
-  // } else if (objectA === objectZ) {
-  //   return 0;
+  const nameA = objectA.name; // la propiedad name del obejto a
+  const nameZ = objectZ.name;
+  if (nameA > nameZ) {
+    return 1; // z va primero
+  } else if (nameZ > nameA) {
+    return -1; // a va primero
   }
 }
 const average = pokemons => {

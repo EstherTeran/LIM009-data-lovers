@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1554931205914" clover="3.2.0">
-  <project timestamp="1554931205915" name="All files">
+<coverage generated="1554988079750" clover="3.2.0">
+  <project timestamp="1554988079750" name="All files">
     <metrics statements="31" coveredstatements="31" conditionals="14" coveredconditionals="14" methods="5" coveredmethods="5" elements="50" coveredelements="50" complexity="0" loc="31" ncloc="31" packages="1" files="1" classes="1"/>
     <file name="data.js" path="C:\Users\L-125\Desktop\LIM009-data-lovers\src\data.js">
       <metrics statements="31" coveredstatements="31" conditionals="14" coveredconditionals="14" methods="5" coveredmethods="5"/>
@@ -21,20 +21,20 @@
       <line num="23" count="1" type="stmt"/>
       <line num="24" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="25" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="1" type="stmt"/>
       <line num="30" count="1" type="stmt"/>
-      <line num="31" count="1" type="stmt"/>
       <line num="32" count="1" type="stmt"/>
-      <line num="34" count="1" type="stmt"/>
-      <line num="35" count="2" type="stmt"/>
-      <line num="36" count="2" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
-      <line num="40" count="1" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
       <line num="43" count="1" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="46" count="2" type="stmt"/>
-      <line num="58" count="1" type="stmt"/>
-      <line num="61" count="1" type="stmt"/>
+      <line num="44" count="2" type="stmt"/>
+      <line num="56" count="1" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

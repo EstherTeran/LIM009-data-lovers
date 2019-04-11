@@ -18,6 +18,7 @@ const data = [{
   'avg_spawns': 0,
   'spawn_time': 'N/A',
   'multipliers': null,
+
   'weaknesses': [
     'Water',
     'Electric',
@@ -90,9 +91,10 @@ describe('Realizando test a las funciones', () => {
   it('debería ser una función', () => {
     expect(typeof GlobalFunctions.compareNames).toBe('function');
   });
-  it('deberia compara los nombres ', () => {
-    expect(GlobalFunctions.compareNames('objectA.name', 'objectZ.name')).toEqual(undefined);
+  it('deberia retornar undefined al pasarle strings como parametros', () => {
+    expect(GlobalFunctions.compareNames('objectA', 'objectZ')).toEqual(undefined);
   });
+
   it('deberia ser una funcion', () => {
     expect(typeof GlobalFunctions.sortData).toBe('function');
   });

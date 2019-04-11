@@ -22,5 +22,6 @@ selecType.addEventListener('change', () => {
   }
 });
 root.innerHTML = GlobalFunctions.printPokemons(dataBase);
+
 let promedio = GlobalFunctions.average(dataBase);
 averageInformation.innerHTML = ` El Promedio total del peso de los pokemones es:  ${promedio} `;
